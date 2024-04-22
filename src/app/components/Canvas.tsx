@@ -164,11 +164,14 @@ export default function Canvas() {
       >
         <Image
           className="box"
-          src="/safu.png"
+          src="/safu.svg"
           alt="SAFU Logo"
           // className="dark:invert"
           width={100}
           height={24}
+          style={{
+            opacity: 0,
+          }}
           priority
         />
         {/* <div className="box">
