@@ -1,9 +1,9 @@
-import Canvas from "./components/Canvas";
+import Launch from "./components/Launch";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Canvas />
+      <Launch />
     </main>
   );
 }
