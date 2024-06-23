@@ -37,8 +37,19 @@ body {
   margin: 0;
 }
 
-canvas {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+/* Menu button */
+
+.menu-button div {
+  @apply rounded-xl;
+  width: 18px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.menu-button div:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.menu {
+  @apply min-w-80 fixed h-screen top-0 left-full bg-neutral-950 p-8 z-10 border-l border-neutral-800;
 }
