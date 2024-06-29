@@ -1,9 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import shapes from "../../../public/shapes.png";
 import { useState, useEffect, useRef } from "react";
-import { animate, scroll, ScrollOffset, stagger } from "motion";
 import Block from "./Elements/Block";
 
 export default function Staking() {
@@ -12,17 +9,6 @@ export default function Staking() {
 	useEffect(() => {
 		setShow(true);
 	}, []);
-
-	useEffect(() => {
-		if (show) {
-			const delay = window.innerWidth > 1024 ? 3 : 3;
-			// animate(
-			// 	".pop",
-			// 	{ opacity: [0, 1] },
-			// 	{ easing: spring({ stiffness: 300, damping: 16, mass: 1 }), delay: stagger(0.3, { start: delay }) }
-			// );
-		}
-	}, [show]);
 
 	return (
 		<>
@@ -41,7 +27,7 @@ export default function Staking() {
 						/>
 						<Block
 							name="SAFU Verse"
-							desc="SAFU DAO maintains a collection of NFTs of images, animations and music, available on OpenSea. The NFTs possess unique traits that enhance the holder’s voting rights, grants specific powers and offers various discounts."
+							desc="SAFU DAO maintains a collection of NFTs of images, animations and music, available on OpenSea. The NFTs possess unique traits that enhance the holder’s voting rights, grant specific powers and offer discounts."
 							type={3}
 						/>
 					</div>

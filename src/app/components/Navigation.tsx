@@ -43,13 +43,13 @@ function Navigation() {
 		<>
 			{isClient && (
 				<nav className="w-full flex px-5 2xl:px-12 py-4 lg:py-7 2xl:py-10 fixed z-10 down">
-					<Link href={"/"} className="lg:ml-4" scroll={true}>
-						<Image id="box" src={logo} className="w-auto h-8 2xl:h-16" alt="SAFU Launcher Logo" />
+					<Link href={"#intro"} className="lg:ml-4">
+						<Image id="box" src={logo} className="w-auto h-8 2xl:h-12" alt="SAFU Launcher Logo" />
 					</Link>
 					<div
 						className="menu-button w-10 h-10 rounded-full flex flex-col items-center justify-center ml-auto lg:hidden"
 						onClick={() => {
-							animate("#menu", { x: [-320] }, { easing: spring({ stiffness: 300, damping: 18, mass: 0.4 }) });
+							animate("#menu", { x: [-288] }, { easing: spring({ stiffness: 300, damping: 18, mass: 0.4 }) });
 							document.addEventListener("mouseup", handleClickOutside);
 							document.addEventListener("touchend", handleClickOutside);
 						}}
@@ -60,11 +60,14 @@ function Navigation() {
 					</div>
 					<div id="menu" className="menu flex items-center justify-center" ref={wrapperRef}>
 						<div className="flex flex-col text-xl font-normal text-slate-200">
-							<Links />
+							<Links type={2} />
+							<a href="www.google.com" className="mx-auto flex justify-center lg:hidden">
+								<button className="safu-button-pop">Explore App</button>
+							</a>
 						</div>
 					</div>
 					<div className="hidden lg:flex justify-start text-gray-400 text-sm 2xl:text-base font-normal pl-10 2xl:pl-16">
-						<Links />
+						<Links type={1} />
 					</div>
 					<a href="www.google.com" className="max-lg:hidden ml-auto flex items-center">
 						<button className="safu-button-pop">Explore App</button>

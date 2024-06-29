@@ -33,7 +33,7 @@ export default function Footer() {
 						<Image id="box" src={logo} className="w-auto h-16" alt="SAFU Launcher Logo" />
 					</Link>
 					<div className="flex max-md:flex-col text-xl font-light text-gray-400 mb-12">
-						<Links isFooter={true} />
+						<Links type={3} />
 					</div>
 					<p className=" text-gray-400">© 2024 All rights reserved.</p>
 				</footer>

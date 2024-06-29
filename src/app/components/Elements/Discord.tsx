@@ -1,6 +1,10 @@
 const Discord = ({ url }: { url: string }) => {
 	return (
-		<a href={url} className="inline-flex items-center rounded-full px-4 py-4 mr-4 hover:bg-gray-600">
+		<a
+			href={url}
+			className="inline-flex items-center rounded-full px-4 py-4 mr-4 hover:bg-gray-600 pop"
+			target="_blank"
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 127.14 96.36"

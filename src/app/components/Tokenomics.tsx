@@ -10,17 +10,6 @@ export default function Tokenomics() {
 		setShow(true);
 	}, []);
 
-	useEffect(() => {
-		if (show) {
-			const delay = window.innerWidth > 1024 ? 3 : 3;
-			// animate(
-			// 	".pop",
-			// 	{ opacity: [0, 1] },
-			// 	{ easing: spring({ stiffness: 300, damping: 16, mass: 1 }), delay: stagger(0.3, { start: delay }) }
-			// );
-		}
-	}, [show]);
-
 	return (
 		<>
 			{show && (
@@ -30,8 +19,8 @@ export default function Tokenomics() {
 							Tokenomics
 						</h2>
 						<div className="w-full"></div>
-						<p className="md:w-96 lg:w-3/4 text-md lg:text-lg font-light text-center text-gray-400">
-							$SAFU, the native token of the SAFU ecosystem, is key to all utilitarian and governance functions
+						<p className="md:w-96 lg:w-3/4 text-md lg:text-lg font-light text-center text-gray-400 pop">
+							$SAFU, the native token of the SAFU ecosystem, is key to all practical and governance functions
 						</p>
 						<div className="w-full flex flex-wrap mt-12">
 							<Numbers name="Total Supply" desc="1 B" />
@@ -39,8 +28,8 @@ export default function Tokenomics() {
 							<Numbers name="Presale" desc="100 M" />
 							<Numbers name="Team Allocation" desc="40 M" />
 							<Numbers name="Treasury Allocation" desc="50 M" />
-							<Numbers name="Staking Pool" desc="10%" more=" of swap tax and fees" />
-							<Numbers name="Swap Taxation" desc="5%" more="per swap" />
+							<Numbers name="Staking Pool" desc="10%" more="of swap tax and fees" />
+							<Numbers name="Swap Taxation" desc="5%" more="on each swap" />
 						</div>
 					</div>
 				</section>

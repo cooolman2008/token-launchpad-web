@@ -1,6 +1,5 @@
 "use client";
 
-import logo from "../../../public/safu.svg";
 import { useState, useEffect } from "react";
 import { animate, spring, stagger } from "motion";
 
@@ -16,7 +15,7 @@ export default function Intro() {
 			const delay = window.innerWidth > 1024 ? 3 : 3;
 			animate(
 				".ups",
-				{ y: [0, -15], opacity: [0, 1] },
+				{ y: [15, 0], opacity: [0, 1] },
 				{ easing: spring({ stiffness: 300, damping: 16, mass: 1 }), delay: stagger(0.3, { start: delay }) }
 			);
 		}
@@ -25,7 +24,10 @@ export default function Intro() {
 	return (
 		<>
 			{show && (
-				<section className="w-full text-center lg:min-h-screen relative px-10 overflow-hidden bg-gradient-to-t from-blue-950/30">
+				<section
+					id="intro"
+					className="w-full text-center lg:min-h-screen relative px-10 overflow-hidden bg-gradient-to-t from-blue-950/30"
+				>
 					<video
 						className="w-screen object-cover absolute left-0 right-0 top-0 bottom-0 -z-1"
 						autoPlay={true}
@@ -41,7 +43,7 @@ export default function Intro() {
 						</h1>
 					</div>
 					<p className="text-sm lg:text-2xl lg:leading-9 text-gray-400 font-light ups mb-8">
-						SAFU Launcher is an inventive, decentralised, fully on-chain platform for projects to launch ideas
+						SAFU Launcher is a decentralised, fully on-chain platform for projects to launch ideas
 						<br className="lg:hidden" />
 						and for investors to tap into opportunities
 					</p>
@@ -51,10 +53,7 @@ export default function Intro() {
 								<button className="safu-button-pops">Buy NFTs</button>
 							</a>
 							<a href="www.google.com" className="mx-auto flex justify-center">
-								<button className="safu-button-mid">Buy $SAFU</button>
-							</a>
-							<a href="www.google.com" className="mx-auto flex justify-center lg:hidden">
-								<button className="safu-button-primary">Explore App</button>
+								<button className="safu-button-primary">Buy $SAFU</button>
 							</a>
 						</div>
 					</div>

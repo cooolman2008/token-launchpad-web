@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import verse from "../../../../public/verse.jpg";
-import ai from "../../../../public/ai.png";
+import verse from "../../../../public/gov.png";
+import ai from "../../../../public/tokens.png";
 import game from "../../../../public/game.png";
 import { useState, useEffect } from "react";
 
@@ -32,12 +32,14 @@ export default function Block({ name, desc, type }: { name: string; desc: string
 				<Image
 					id="box"
 					src={pic}
-					className="w-full h-auto rounded-xl overflow-hidden border border-gray-400/40" // lg:shadow-[10px_20px_200px_#29abe236]  bg-gradient-to-br from-neutral-800 to-black
+					className="w-full h-auto rounded-xl overflow-hidden border border-gray-400/40 pop" // lg:shadow-[10px_20px_200px_#29abe236]  bg-gradient-to-br from-neutral-800 to-black
 					alt="SAFU Launcher Logo"
 				/>
 			</div>
 			<div
-				className={"max-lg:pt-6 max-lg:pb-16 lg:grow basis-0 " + (type === 2 || type === 4 ? "lg:pr-20" : "lg:pl-20")}
+				className={
+					"max-lg:pt-6 max-lg:pb-16 lg:grow basis-0 pop " + (type === 2 || type === 4 ? "lg:pr-20" : "lg:pl-20")
+				}
 			>
 				<h2 className="text-4xl md:text-5xl/tight font-semibold mb-2 bg-gradient-to-t from-slate-200/80 to-slate-200 safu-grad-text-white">
 					{name}

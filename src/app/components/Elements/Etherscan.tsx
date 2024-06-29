@@ -1,6 +1,10 @@
 const Etherscan = ({ url }: { url: string }) => {
 	return (
-		<a href={url} className="inline-flex items-center rounded-full px-4 py-4 mr-4 hover:bg-gray-600">
+		<a
+			href={url}
+			className="inline-flex items-center rounded-full px-4 py-4 mr-4 hover:bg-gray-600 pop"
+			target="_blank"
+		>
 			<svg
 				width="34px"
 				height="34px"
