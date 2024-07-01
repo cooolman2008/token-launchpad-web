@@ -24,7 +24,10 @@ export default function Intro() {
 	return (
 		<>
 			{show && (
-				<section id="intro" className="w-full text-center lg:min-h-[56.25vw] relative px-10 overflow-hidden">
+				<section
+					id="intro"
+					className="w-full text-center lg:min-h-[56.25vw] relative px-10 overflow-hidden bg-gradient-to-r from-blue-950/30"
+				>
 					<video
 						className="w-screen object-cover absolute left-0 right-0 top-0 bottom-0 -z-1"
 						autoPlay={true}
