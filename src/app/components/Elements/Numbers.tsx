@@ -6,7 +6,7 @@ export default function Numbers({ name, desc, more }: { name: string; desc: stri
 			<p className="text-base text-gray-400 mb-1">{name}</p>
 			<span
 				className={
-					"text-5xl font-black bg-gradient-to-t safu-grad-text-white " +
+					"text-4xl sm:text-5xl font-black bg-gradient-to-t safu-grad-text-white " +
 					(more ? " from-cyan-400/60 to-cyan-400" : " from-slate-200/80 to-slate-200")
 				}
 			>

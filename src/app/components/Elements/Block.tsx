@@ -32,7 +32,7 @@ export default function Block({ name, desc, type }: { name: string; desc: string
 				<Image
 					id="box"
 					src={pic}
-					className="w-full h-auto rounded-xl overflow-hidden border border-gray-400/40 pop" // lg:shadow-[10px_20px_200px_#29abe236]  bg-gradient-to-br from-neutral-800 to-black
+					className="w-full h-auto rounded-3xl overflow-hidden border border-gray-400/40 pop" // lg:shadow-[10px_20px_200px_#29abe236]  bg-gradient-to-br from-neutral-800 to-black
 					alt="SAFU Launcher Logo"
 				/>
 			</div>
