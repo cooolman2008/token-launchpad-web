@@ -19,7 +19,7 @@ export default function Tokenomics() {
 							Tokenomics
 						</h2>
 						<div className="w-full"></div>
-						<p className="md:w-96 lg:w-3/4 text-md lg:text-lg font-light text-center text-gray-400 pop">
+						<p className="md:w-96 lg:w-3/4 text-sm lg:text-2xl lg:leading-9 text-gray-400 font-light text-center pop">
 							$SAFU, the native token of the SAFU ecosystem, is key to all practical and governance functions
 						</p>
 						<div className="w-full flex flex-wrap mt-12">

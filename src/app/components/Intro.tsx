@@ -43,9 +43,8 @@ export default function Intro() {
 						</h1>
 					</div>
 					<p className="text-sm lg:text-2xl lg:leading-9 text-gray-400 font-light ups mb-8">
-						SAFU Launcher is a decentralised, fully on-chain platform for projects to launch ideas
-						<br className="lg:hidden" />
-						and for investors to tap into opportunities
+						SAFU Launcher is a decentralised, fully on-chain platform for projects to launch
+						<br /> ideas and for investors to tap into opportunities
 					</p>
 					<div className=" w-full flex justify-center ups">
 						<div className="flex flex-wrap gap-4">

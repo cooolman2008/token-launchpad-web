@@ -44,7 +44,7 @@ export default function Block({ name, desc, type }: { name: string; desc: string
 				<h2 className="text-4xl md:text-5xl/tight font-semibold mb-2 bg-gradient-to-t from-slate-200/80 to-slate-200 safu-grad-text-white">
 					{name}
 				</h2>
-				<p className="md:w-96 lg:w-auto text-base/relaxed xl:text-lg font-normal text-gray-400">{desc}</p>
+				<p className="md:w-96 lg:w-auto text-base/relaxed xl:text-lg/relaxed font-normal text-gray-400">{desc}</p>
 			</div>
 		</div>
 	);
