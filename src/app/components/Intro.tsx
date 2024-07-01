@@ -24,10 +24,7 @@ export default function Intro() {
 	return (
 		<>
 			{show && (
-				<section
-					id="intro"
-					className="w-full text-center lg:min-h-screen relative px-10 overflow-hidden bg-gradient-to-t from-blue-950/30"
-				>
+				<section id="intro" className="w-full text-center lg:min-h-[56.25vw] relative px-10 overflow-hidden">
 					<video
 						className="w-screen object-cover absolute left-0 right-0 top-0 bottom-0 -z-1"
 						autoPlay={true}
@@ -36,9 +33,9 @@ export default function Intro() {
 					>
 						<source src="/video.mp4" type="video/mp4" />
 					</video>
-					<div className="h-10 md:h-24 lg:h-44 2xl:h-96 2xl:mb-24"></div>
+					<div className="h-[34vw]"></div>
 					<div className="flex justify-center">
-						<h1 className="mt-40 lg:mt-80 2xl:mt-96 mb-4 2xl:mb-8 text-5xl lg:text-8xl font-black safu-grad-text ups">
+						<h1 className="mb-4 2xl:mb-8 text-4xl sm:text-5xl lg:text-8xl font-black safu-grad-text ups">
 							IDEAS TO IDOs
 						</h1>
 					</div>
