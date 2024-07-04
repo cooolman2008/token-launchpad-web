@@ -17,13 +17,12 @@ function Navigation() {
 
 	useEffect(() => {
 		if (isClient) {
-			const delay = window.innerWidth > 1024 ? 2 : 2;
 			animate(
 				".down",
 				{ y: [-35, 0], opacity: [0, 1] },
 				{
 					easing: spring({ stiffness: 300, damping: 16, mass: 1 }),
-					delay: stagger(0.3, { start: delay }),
+					delay: stagger(0.3, { start: 2 }),
 					duration: 0.5,
 				}
 			);

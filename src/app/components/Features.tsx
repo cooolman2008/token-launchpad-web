@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Cards from "./Elements/Cards";
-import { animate, inView, spring, stagger } from "motion";
+import { animate, inView, spring } from "motion";
 
 export default function Features() {
 	const [show, setShow] = useState(false);
@@ -16,11 +16,16 @@ export default function Features() {
 			inView(".pop", (event) => {
 				animate(
 					event.target,
-					{ y: [15, 0], opacity: [0, 1], scale: [0.95, 1], skewX: [2, 0], skewY: [1, 0] },
+					{ y: [15, 0], opacity: [0, 1] },
 					{
 						easing: spring({ stiffness: 300, damping: 16, mass: 1 }),
-						delay: stagger(0.2, { start: 0.5 }),
+						delay: 0.5,
 					}
+					// { y: [15, 0], opacity: [0, 1], scale: [0.95, 1], skewX: [2, 0], skewY: [1, 0] },
+					// {
+					// 	easing: spring({ stiffness: 300, damping: 16, mass: 1 }),
+					// 	delay: stagger(0.2, { start: 0.1 }),
+					// }
 				);
 			});
 		}

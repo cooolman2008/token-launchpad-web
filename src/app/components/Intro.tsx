@@ -12,11 +12,10 @@ export default function Intro() {
 
 	useEffect(() => {
 		if (show) {
-			const delay = window.innerWidth > 1024 ? 3 : 3;
 			animate(
 				".ups",
 				{ y: [15, 0], opacity: [0, 1] },
-				{ easing: spring({ stiffness: 300, damping: 16, mass: 1 }), delay: stagger(0.3, { start: delay }) }
+				{ easing: spring({ stiffness: 300, damping: 16, mass: 1 }), delay: stagger(0.3, { start: 3 }) }
 			);
 		}
 	}, [show]);
