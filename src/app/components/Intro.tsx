@@ -33,7 +33,7 @@ export default function Intro() {
 						loop={false}
 						muted={true}
 					>
-						<source src="/video.mp4" type="video/mp4" />
+						<source src="/video_trim.mp4" type="video/mp4" />
 					</video>
 					<div className="h-[34vw]"></div>
 					<div className="flex justify-center">
