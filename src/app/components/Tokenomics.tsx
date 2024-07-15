@@ -24,9 +24,9 @@ export default function Tokenomics() {
 						</p>
 						<div className="w-full flex flex-wrap mt-12">
 							<Numbers name="Total Supply" desc="1 B" />
-							<Numbers name="Initial Liquidity" desc="810 M" />
+							<Numbers name="Initial Liquidity" desc="750 M" />
 							<Numbers name="Presale" desc="100 M" />
-							<Numbers name="Team Allocation" desc="40 M" />
+							<Numbers name="Team Allocation" desc="100 M" />
 							<Numbers name="Treasury Allocation" desc="50 M" />
 							<Numbers name="Staking Pool" desc="10%" more="of swap tax and fees" />
 							<Numbers name="Swap Taxation" desc="5%" more="on each swap" />
