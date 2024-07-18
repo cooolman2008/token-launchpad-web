@@ -16,7 +16,7 @@ function Links({ type }: { type: number }) {
 			<a href="https://safuapp.gitbook.io/safu-launcher" className={linkClass} target="_blank">
 				<span className="">Docs</span>
 			</a>
-			<a href="#" className={linkClass} target="_blank">
+			<a href="Safu Launcher whitepaper.pdf" className={linkClass} target="_blank">
 				<span className="">Whitepaper</span>
 			</a>
 		</>
