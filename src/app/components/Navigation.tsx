@@ -22,7 +22,7 @@ function Navigation() {
 				{ y: [-35, 0], opacity: [0, 1] },
 				{
 					easing: spring({ stiffness: 300, damping: 16, mass: 1 }),
-					delay: stagger(0.3, { start: 2 }),
+					delay: stagger(0.3, { start: 0.5 }),
 					duration: 0.5,
 				}
 			);
@@ -60,7 +60,7 @@ function Navigation() {
 					<div id="menu" className="menu flex items-center justify-center" ref={wrapperRef}>
 						<div className="flex flex-col text-xl font-normal text-slate-200">
 							<Links type={2} />
-							<a href="www.google.com" className="mx-auto flex justify-center lg:hidden">
+							<a href="https://app.safulauncher.com" className="mx-auto flex justify-center lg:hidden" target="_blank">
 								<button className="safu-button-pop">Explore App</button>
 							</a>
 						</div>
@@ -68,7 +68,7 @@ function Navigation() {
 					<div className="hidden lg:flex justify-start text-gray-400 text-sm 2xl:text-base font-normal pl-10 2xl:pl-16">
 						<Links type={1} />
 					</div>
-					<a href="www.google.com" className="max-lg:hidden ml-auto flex items-center">
+					<a href="https://app.safulauncher.com" className="max-lg:hidden ml-auto flex items-center" target="_blank">
 						<button className="safu-button-pop">Explore App</button>
 					</a>
 				</nav>

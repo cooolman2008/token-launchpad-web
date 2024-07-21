@@ -15,7 +15,7 @@ export default function Intro() {
 			animate(
 				".ups",
 				{ y: [15, 0], opacity: [0, 1] },
-				{ easing: spring({ stiffness: 300, damping: 16, mass: 1 }), delay: stagger(0.3, { start: 3 }) }
+				{ easing: spring({ stiffness: 300, damping: 16, mass: 1 }), delay: stagger(0.3, { start: 0.5 }) }
 			);
 		}
 	}, [show]);
@@ -33,7 +33,7 @@ export default function Intro() {
 						loop={false}
 						muted={true}
 					>
-						<source src="/video.mp4" type="video/mp4" />
+						<source src="/video_trim.mp4" type="video/mp4" />
 					</video>
 					<div className="h-[34vw]"></div>
 					<div className="flex justify-center">
@@ -47,10 +47,10 @@ export default function Intro() {
 					</p>
 					<div className=" w-full flex justify-center ups">
 						<div className="flex flex-wrap gap-4">
-							<a href="www.google.com" className="mx-auto flex justify-center">
+							<a href="#" onClick={(e) => e.preventDefault()} className="mx-auto flex justify-center">
 								<button className="safu-button-pops">Buy NFTs</button>
 							</a>
-							<a href="www.google.com" className="mx-auto flex justify-center">
+							<a href="#" onClick={(e) => e.preventDefault()} className="mx-auto flex justify-center">
 								<button className="safu-button-primary">Buy $SAFU</button>
 							</a>
 						</div>
