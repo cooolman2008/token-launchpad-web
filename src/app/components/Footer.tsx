@@ -19,7 +19,7 @@ export default function Footer() {
 	return (
 		<>
 			{show && (
-				<footer className="w-full flex flex-col items-center pb-8 bg-gradient-to-r from-blue-950/30">
+				<footer className="w-full flex flex-col items-center pb-8 bg-gradient-to-r from-blue-950/30 z-10 relative">
 					<Socials />
 					<div className="flex max-md:flex-col text-xl font-light text-gray-400 mb-12 lg:hidden">
 						<Links type={3} />
