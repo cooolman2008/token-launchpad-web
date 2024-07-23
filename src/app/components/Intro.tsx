@@ -47,9 +47,9 @@ export default function Intro() {
 					</p>
 					<div className=" w-full flex justify-center ups">
 						<div className="flex flex-wrap gap-4">
-							<a href="#" onClick={(e) => e.preventDefault()} className="mx-auto flex justify-center">
+							{/* <a href="#" onClick={(e) => e.preventDefault()} className="mx-auto flex justify-center">
 								<button className="safu-button-pops">Buy NFTs</button>
-							</a>
+							</a> */}
 							<a href="#" onClick={(e) => e.preventDefault()} className="mx-auto flex justify-center">
 								<button className="safu-button-primary">Buy $SAFU</button>
 							</a>
