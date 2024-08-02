@@ -24,7 +24,7 @@ export default function Socials() {
 					<Etherscan url="https://holesky.etherscan.io/token/0xe400683894f1835974A671886ACA3525D0A4e59F" />
 					<Youtube url="https://www.youtube.com/@Safulauncher" />
 					<Discord url="#" />
-					<Medium url="http://medium.com/@safulerc" />
+					<Medium url="https://medium.com/@SAFULauncherERC" />
 				</section>
 			)}
 		</>
