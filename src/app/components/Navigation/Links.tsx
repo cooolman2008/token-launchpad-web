@@ -13,6 +13,9 @@ function Links({ type }: { type: number }) {
 			<a href="#tokenomics" className={linkClass}>
 				<span className="">Tokenomics</span>
 			</a>
+			<a href="#faq" className={linkClass}>
+				<span className="">FAQ</span>
+			</a>
 			<a href="https://safuapp.gitbook.io/safu-launcher" className={linkClass} target="_blank">
 				<span className="">Docs</span>
 			</a>

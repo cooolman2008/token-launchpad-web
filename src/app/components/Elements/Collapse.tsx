@@ -1,13 +1,12 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { animate, inView, spring, stagger } from "motion";
+import { animate, spring } from "motion";
 import Arrow from "./Arrow";
 import { scrollTo } from "@/app/Utils/utils";
 
 export default function Collapse({ name, type }: { name: string; type: number }) {
 	const [expand, setExpand] = useState(false);
-	const wrapperRef = useRef<HTMLDivElement>(null);
 	const arrowRef = useRef<SVGSVGElement>(null);
 	const contentRef = useRef<HTMLDivElement>(null);
 	const close = useCallback(() => {
@@ -26,7 +25,7 @@ export default function Collapse({ name, type }: { name: string; type: number })
 
 	const open = useCallback(() => {
 		console.log(arrowRef?.current);
-		if (wrapperRef?.current?.id) scrollTo(wrapperRef?.current?.id);
+		scrollTo(type + "wrapper");
 		if (arrowRef?.current)
 			animate(
 				arrowRef?.current,
@@ -53,7 +52,7 @@ export default function Collapse({ name, type }: { name: string; type: number })
 		}
 	}, [close, open, expand]);
 	return (
-		<div ref={wrapperRef} className="w-full border-b border-gray-700 py-8">
+		<div id={type + "wrapper"} className="w-full border-b border-gray-700 py-8">
 			<div
 				className="flex mb-1 cursor-pointer"
 				onClick={() => {
