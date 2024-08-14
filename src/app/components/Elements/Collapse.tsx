@@ -8,7 +8,7 @@ import { scrollTo } from "@/app/Utils/utils";
 export default function Collapse({ name, type }: { name: string; type: number }) {
 	const [expand, setExpand] = useState(false);
 	const wrapperRef = useRef<HTMLDivElement>(null);
-	const arrowRef = useRef<HTMLDivElement>(null);
+	const arrowRef = useRef<SVGSVGElement>(null);
 	const contentRef = useRef<HTMLDivElement>(null);
 	const close = useCallback(() => {
 		if (arrowRef?.current)
@@ -40,7 +40,7 @@ export default function Collapse({ name, type }: { name: string; type: number })
 		if (contentRef?.current)
 			animate(
 				contentRef?.current,
-				{ maxHeight: "600px", opacity: 1 },
+				{ maxHeight: "2000px", opacity: 1 },
 				{ easing: spring({ stiffness: 300, damping: 16, mass: 0.4 }), delay: 0.1 }
 			);
 	}, []);
@@ -54,20 +54,19 @@ export default function Collapse({ name, type }: { name: string; type: number })
 	}, [close, open, expand]);
 	return (
 		<div ref={wrapperRef} className="w-full border-b border-gray-700 py-8">
-			<div className="flex mb-1">
-				<Arrow
-					ref={arrowRef}
-					onClick={() => {
-						setExpand(!expand);
-					}}
-					checked={expand}
-				/>
+			<div
+				className="flex mb-1 cursor-pointer"
+				onClick={() => {
+					setExpand(!expand);
+				}}
+			>
+				<Arrow ref={arrowRef} checked={expand} />
 				<h3 className="text-3xl mb-1 text-gray-300">{name}</h3>
 			</div>
-			<div ref={contentRef} className={"flex flex-wrap max-h-0 pl-10 "}>
+			<div ref={contentRef} className="flex flex-wrap max-h-0 overflow-hidden md:pl-10 ">
 				{type === 1 && (
-					<div className={"mt-8"}>
-						<p className="text-base xl:text-lg font-light text-gray-300">
+					<div className="mt-8">
+						<p className="text-base xl:text-lg font-light text-gray-300 max-lg:text-justify">
 							SAFU Launcher is a decentralised platform for launching blockchain projects/IDOs fully on-chain with
 							enhanced security and free inbuilt features such as custom taxation, liquidity pool creation, liquidity
 							token locker and native token vesting. Built on Ethereum mainnet, it offers cross-chain compatibility with
@@ -105,8 +104,8 @@ export default function Collapse({ name, type }: { name: string; type: number })
 					</div>
 				)}
 				{type === 2 && (
-					<div className={"mt-8"}>
-						<p className="text-base xl:text-lg font-light text-gray-300">
+					<div className="mt-8">
+						<p className="text-base xl:text-lg font-light text-gray-300 max-lg:text-justify">
 							$SAFU is the first ERC20 token that deploys other ERC20 tokens. Its liquidity token locking and token
 							vesting features are free and inbuilt. Every token launched on the platform can launch its own staking
 							pool with rewards in $ETH. SAFU Launcher prevents sniper attacks by allowing projects to set high initial
@@ -126,8 +125,8 @@ export default function Collapse({ name, type }: { name: string; type: number })
 					</div>
 				)}
 				{type === 3 && (
-					<div className={"mt-8"}>
-						<p className="text-base xl:text-lg font-light text-gray-300">
+					<div className="mt-8">
+						<p className="text-base xl:text-lg font-light text-gray-300 max-lg:text-justify">
 							Projects launched on SAFU have their liquidity pool tokens automatically locked, there are no airdrops
 							either. A maximum of 20% of supply can be allocated to the team, but even this allocation is vested with a
 							minimum cliff period of 30 days from creation of its liquidity pool.
@@ -135,16 +134,16 @@ export default function Collapse({ name, type }: { name: string; type: number })
 					</div>
 				)}
 				{type === 4 && (
-					<div className={"mt-8"}>
-						<p className="text-base xl:text-lg font-light text-gray-300">
+					<div className="mt-8">
+						<p className="text-base xl:text-lg font-light text-gray-300 max-lg:text-justify">
 							Projects can launch projects for free on SAFU Launcher. Unlike existing IDO platforms, SAFU Launcher
 							offers features like liquidity locking and token vesting for free.
 						</p>
 					</div>
 				)}
 				{type === 5 && (
-					<div className={"mt-8"}>
-						<p className="text-base xl:text-lg font-light text-gray-300">
+					<div className="mt-8">
+						<p className="text-base xl:text-lg font-light text-gray-300 max-lg:text-justify">
 							SAFU Launcher is compatible across multiple chains. SAFU supports Base, BSC, Polygon, Optimism, Arbitrium,
 							Avalanche and Blast chains at present and will expand the support to other EVMs (Ehtereum Virtual
 							Machines) soon.

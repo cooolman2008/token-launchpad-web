@@ -1,9 +1,11 @@
 import { forwardRef, HTMLProps, type ComponentProps } from "react";
 
-const Arrow = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((props, ref) => {
+const Arrow = forwardRef<SVGSVGElement, HTMLProps<SVGSVGElement>>((props, ref) => {
 	return (
-		<div className="p-1 mr-2 flex cursor-pointer" {...props} ref={ref}>
+		<div className="p-1 mr-2 flex cursor-pointer">
 			<svg
+				ref={ref}
+				{...props}
 				xmlns="http://www.w3.org/2000/svg"
 				xmlnsXlink="http://www.w3.org/1999/xlink"
 				height="28px"
