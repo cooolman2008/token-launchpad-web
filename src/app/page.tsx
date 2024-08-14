@@ -4,7 +4,7 @@ import Intro from "./components/Intro";
 import Navigation from "./components/Navigation";
 import Tokenomics from "./components/Tokenomics";
 import Features from "./components/Features";
-import Socials from "./components/Socials";
+import FAQ from "./components/FAQ";
 
 export default function Home() {
 	return (
@@ -16,6 +16,7 @@ export default function Home() {
 				<Features />
 				<Tokenomics />
 				<Staking />
+				<FAQ />
 			</main>
 			<Footer />
 		</>
