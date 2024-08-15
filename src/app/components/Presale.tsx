@@ -21,7 +21,7 @@ function Presale() {
 			{isClient && (
 				<div className="w-full flex justify-center text-center py-2 bg-gradient-to-r from-[#fbb789] via-60% via-pink-500 to-[140%] to-blue-600 border-b border-neutral-800 z-30 fixed bottom-0">
 					<p className="text-3xl text-neutral-950 font-normal italic">
-						<b className="text-3xl font-black mr-4">PRESALE</b> Starts on 20TH August
+						<b className="text-3xl font-black mr-4">PRESALE</b> Starts on 20<sup>th</sup> August
 					</p>
 				</div>
 			)}
