@@ -117,7 +117,6 @@ body {
 }
 
 /* Menu button */
-
 .menu-button div {
   @apply rounded-xl;
   width: 18px;
@@ -131,8 +130,6 @@ body {
 
 .menu {
   @apply min-w-72 fixed h-screen top-0 left-full backdrop-blur-lg bg-gradient-to-br from-neutral-700/80 p-8 z-20 border-l border-neutral-600;
-  /* bg-gradient-to-br from-neutral-700/80 */
-  /* backdrop-blur-lg bg-black/10 */
 }
 
 /* Gradient text */

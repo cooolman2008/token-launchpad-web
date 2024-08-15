@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation";
 import Tokenomics from "./components/Tokenomics";
 import Features from "./components/Features";
 import FAQ from "./components/FAQ";
+import Presale from "./components/Presale";
 
 export default function Home() {
 	return (
@@ -17,6 +18,7 @@ export default function Home() {
 				<Tokenomics />
 				<Staking />
 				<FAQ />
+				<Presale />
 			</main>
 			<Footer />
 		</>
