@@ -144,7 +144,7 @@ export default function Collapse({ name, type }: { name: string; type: number })
 					<div className="mt-8">
 						<p className="text-base xl:text-lg font-light text-gray-300 max-lg:text-justify">
 							SAFU Launcher is compatible across multiple chains. SAFU supports Base, BSC, Polygon, Optimism, Arbitrium,
-							Avalanche and Blast chains at present and will expand the support to other EVMs (Ehtereum Virtual
+							Avalanche and Blast chains at present and will expand the support to other EVMs (Ethereum Virtual
 							Machines) soon.
 						</p>
 					</div>
