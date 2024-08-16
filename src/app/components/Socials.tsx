@@ -23,7 +23,7 @@ export default function Socials() {
 					<Twitter url="https://x.com/SAFUlauncher" />
 					<Etherscan url="https://holesky.etherscan.io/token/0xe400683894f1835974A671886ACA3525D0A4e59F" />
 					<Youtube url="https://www.youtube.com/@Safulauncher" />
-					<Discord url="#" />
+					<Discord url="https://discord.gg/ET4vyphmy8" />
 					<Medium url="https://medium.com/@SAFULauncherERC" />
 				</section>
 			)}
