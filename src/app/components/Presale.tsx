@@ -17,7 +17,7 @@ function Presale() {
 						<p className="text-4xl text-slate-200 font-normal italic max-md:mb-4">
 							<b className="text-4xl font-black">PRESALE</b> is on!
 						</p>
-						<a href="https://app.safulauncher.com/" className="md:ml-12 flex justify-center">
+						<a href="https://app.safulauncher.com/" target="_blank" className="md:ml-12 flex justify-center">
 							<button className="safu-button-secondary">Buy Presale</button>
 						</a>
 					</div>
