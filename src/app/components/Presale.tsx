@@ -1,11 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import logo from "../../../public/safu.svg";
-import { animate, spring, stagger } from "motion";
-import Links from "./Navigation/Links";
+import { useEffect, useState } from "react";
 
 function Presale() {
 	const [isClient, setIsClient] = useState(false);
@@ -14,15 +9,18 @@ function Presale() {
 		setIsClient(true);
 	}, []);
 
-	//
-
 	return (
 		<>
 			{isClient && (
-				<div className="w-full flex justify-center text-center py-2 bg-gradient-to-r from-[#fbb789] via-60% via-pink-500 to-[140%] to-blue-600 border-b border-neutral-800 z-30 fixed bottom-0">
-					<p className="text-3xl text-neutral-950 font-normal italic">
-						<b className="text-3xl font-black mr-4">PRESALE</b> Starts on 20<sup>th</sup> August
-					</p>
+				<div className="w-full flex justify-center text-center py-6 md:py-8 bg-[#000000] border-t border-neutral-800 z-30 fixed bottom-0">
+					<div className="container flex max-md:flex-col justify-center">
+						<p className="text-4xl text-slate-200 font-normal italic max-md:mb-4">
+							<b className="text-4xl font-black">PRESALE</b> is on!
+						</p>
+						<a href="https://app.safulauncher.com/" className="md:ml-12 flex justify-center">
+							<button className="safu-button-secondary">Buy Presale</button>
+						</a>
+					</div>
 				</div>
 			)}
 		</>

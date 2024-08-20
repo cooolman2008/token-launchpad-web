@@ -41,7 +41,7 @@ function Navigation() {
 	return (
 		<>
 			{isClient && (
-				<nav className="w-full flex px-5 2xl:px-12 py-4 lg:py-7 2xl:py-10 fixed z-20 down backdrop-blur-sm">
+				<nav className="w-full flex px-5 2xl:px-12 py-4 lg:py-7 2xl:py-10 fixed z-20 down md:backdrop-blur-sm">
 					<Link href={"#intro"} className="lg:ml-4">
 						<Image id="box" src={logo} className="w-auto h-8 2xl:h-12" alt="SAFU Launcher Logo" />
 					</Link>
