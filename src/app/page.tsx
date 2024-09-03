@@ -18,7 +18,7 @@ export default function Home() {
 				<Tokenomics />
 				<Staking />
 				<FAQ />
-				<Presale />
+				{/* <Presale /> */}
 			</main>
 			<Footer />
 		</>

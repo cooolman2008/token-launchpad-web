@@ -41,7 +41,7 @@ function Navigation() {
 	return (
 		<>
 			{isClient && (
-				<nav className="w-full flex px-5 2xl:px-12 py-4 lg:py-7 2xl:py-10 fixed z-20 down md:backdrop-blur-sm">
+				<nav className="w-full flex px-5 2xl:px-12 py-4 lg:py-7 2xl:py-5 fixed z-20 down md:backdrop-blur-sm">
 					<Link href={"#intro"} className="lg:ml-4">
 						<Image id="box" src={logo} className="w-auto h-8 2xl:h-12" alt="SAFU Launcher Logo" />
 					</Link>
@@ -61,15 +61,15 @@ function Navigation() {
 						<div className="flex flex-col text-xl font-normal text-slate-200">
 							<Links type={2} />
 							<a href="https://app.safulauncher.com" className="mx-auto flex justify-center lg:hidden" target="_blank">
-								<button className="safu-button-pop">Explore App</button>
+								<button className="safu-button-primary">Buy $SAFU</button>
 							</a>
 						</div>
 					</div>
-					<div className="hidden lg:flex justify-start text-gray-400 text-sm 2xl:text-base font-normal pl-10 2xl:pl-16">
+					<div className="hidden lg:flex justify-start text-slate-200 text-sm 2xl:text-base font-normal pl-10 2xl:pl-16">
 						<Links type={1} />
 					</div>
 					<a href="https://app.safulauncher.com" className="max-lg:hidden ml-auto flex items-center" target="_blank">
-						<button className="safu-button-pop">Explore App</button>
+						<button className="safu-button-primary">Buy $SAFU</button>
 					</a>
 				</nav>
 			)}

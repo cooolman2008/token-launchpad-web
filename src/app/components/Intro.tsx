@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { animate, spring, stagger } from "motion";
+import Telegram from "./Elements/Telegram";
+import Twitter from "./Elements/Twitter";
 
 export default function Intro() {
 	const [show, setShow] = useState(false);
@@ -25,36 +27,33 @@ export default function Intro() {
 			{show && (
 				<section
 					id="intro"
-					className="w-full text-center lg:min-h-[56.25vw] relative px-10 overflow-hidden bg-gradient-to-r from-blue-950/30"
+					className="w-full min-h-screen text-center lg:min-h-[56.25vw] flex flex-col items-center justify-center"
 				>
-					<video
-						className="w-screen object-cover absolute left-0 right-0 top-0 bottom-0 -z-1"
-						autoPlay={true}
-						loop={false}
-						muted={true}
-					>
-						<source src="/video_trim.mp4" type="video/mp4" />
-					</video>
-					<div className="h-[34vw]"></div>
-					<div className="flex justify-center">
-						<h1 className="mb-4 2xl:mb-8 text-4xl sm:text-5xl lg:text-8xl font-black safu-grad-text ups">
-							IDEAS TO IDOs
-						</h1>
-					</div>
-					<p className="text-sm lg:text-2xl lg:leading-9 text-gray-400 font-light ups mb-8">
-						SAFU Launcher is a decentralised, fully on-chain platform for projects to launch
-						<br /> ideas and for investors to tap into opportunities
-					</p>
-					<div className=" w-full flex justify-center ups">
-						<div className="flex flex-wrap gap-4">
-							{/* <a href="#" onClick={(e) => e.preventDefault()} className="mx-auto flex justify-center">
-								<button className="safu-button-pops">Buy NFTs</button>
-							</a> */}
-							<a href="#" onClick={(e) => e.preventDefault()} className="mx-auto flex justify-center">
-								<button className="safu-button-primary">Buy $SAFU</button>
-							</a>
+					<div className="container flex flex-col">
+						<div className="flex items-center justify-center">
+							<div className="dash-vertical">
+								<h1 className="py-4 2xl:py-8 text-4xl sm:text-5xl lg:text-8xl font-black safu-title-grad-text ups">
+									IDEAS TO IDOs
+								</h1>
+								<div className="px-8">
+									<p className="text-sm lg:text-2xl lg:leading-9 text-zinc-400 font-light ups mb-8">
+										SAFU Launcher is a decentralised, fully on-chain platform for projects to launch
+										<br /> ideas and for investors to tap into opportunities
+									</p>
+									<div className=" w-full flex justify-center ups">
+										<div className="flex flex-col mr-4">
+											<a href="https://app.safulauncher.com" className="mx-auto flex justify-center">
+												<button className="safu-button-primary">Explore App</button>
+											</a>
+										</div>
+										<Telegram url="" />
+										<Twitter url="" />
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+					<div className="flex justify-center"></div>
 				</section>
 			)}
 		</>
