@@ -18,7 +18,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="scroll-smooth">
 			<body className={plus_Jakarta_Sans.className + " relative pb-32 md:pb-24"}>{children}</body>
-			<GoogleAnalytics gaId="G-QYT9B09WZH" />
+			{/* <GoogleAnalytics gaId="G-QYT9B09WZH" /> */}
 		</html>
 	);
 }
