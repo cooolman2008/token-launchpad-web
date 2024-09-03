@@ -15,12 +15,12 @@ export default function Home() {
 			<main className="mx-auto min-h-screen">
 				<Intro />
 				<Features />
-				<Tokenomics />
+				{/* <Tokenomics />
 				<Staking />
-				<FAQ />
+				<FAQ /> */}
 				{/* <Presale /> */}
 			</main>
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 }
