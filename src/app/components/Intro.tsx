@@ -30,9 +30,9 @@ export default function Intro() {
 					className="w-full min-h-screen text-center lg:min-h-[56.25vw] flex flex-col items-center justify-center"
 				>
 					<div className="container flex flex-col">
-						<div className="flex items-center justify-center">
-							<div className="dash-vertical">
-								<h1 className="py-4 2xl:py-8 text-4xl sm:text-5xl lg:text-8xl font-black safu-title-grad-text ups">
+						<div className="relative flex flex-col items-center justify-center">
+							<div className="dash-vertical py-[150px]">
+								<h1 className="py-4 xl:py-8 text-4xl sm:text-5xl lg:text-8xl font-black safu-title-grad-text ups">
 									IDEAS TO IDOs
 								</h1>
 								<div className="px-8">
@@ -51,6 +51,7 @@ export default function Intro() {
 									</div>
 								</div>
 							</div>
+							<div className="absolute dash-horizontal px-[763px] py-[64px] bottom-[304px]"></div>
 						</div>
 					</div>
 					<div className="flex justify-center"></div>
