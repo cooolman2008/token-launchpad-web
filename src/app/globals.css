@@ -134,24 +134,30 @@ body {
 
 /* Gradient text */
 .safu-grad-text {
-	background: linear-gradient(135deg, rgb(252, 190, 138) 0%, rgba(219, 39, 119, 1) 50% 65%, rgba(39, 99, 235, 1) 95%);
+	background: linear-gradient(90deg, #faad6d 25%, #d51e79 70%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 /* Gradient text */
 .safu-grad-text-white {
+	background: linear-gradient(180deg, #ffffff 30%, #adadadaa 90%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 /* Gradient text */
 .safu-title-grad-text {
-	background: linear-gradient(180deg, #ffffff 0%, #adadad 100%);
+	background: linear-gradient(182deg, #ffffff 30%, #adadad88 90%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 @layer components {
+	.dash-double-horizontal {
+		background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23A1A1A188' stroke-width='2' stroke-dasharray='2%2c 12' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+		background-size: 101% auto;
+		background-position-x: 50%;
+	}
 	.dash-horizontal {
 		background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23A1A1A188' stroke-width='2' stroke-dasharray='2%2c 12' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 		background-size: 101% 101%;

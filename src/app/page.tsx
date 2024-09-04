@@ -6,6 +6,7 @@ import Tokenomics from "./components/Tokenomics";
 import Features from "./components/Features";
 import FAQ from "./components/FAQ";
 import Presale from "./components/Presale";
+import Positioning from "./components/Positioning";
 
 export default function Home() {
 	return (
@@ -14,6 +15,7 @@ export default function Home() {
 			<Navigation />
 			<main className="mx-auto min-h-screen">
 				<Intro />
+				<Positioning />
 				<Features />
 				{/* <Tokenomics />
 				<Staking />
