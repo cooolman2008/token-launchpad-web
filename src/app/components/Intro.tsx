@@ -25,20 +25,17 @@ export default function Intro() {
 	return (
 		<>
 			{show && (
-				<section
-					id="intro"
-					className="w-full min-h-screen text-center lg:min-h-[56.25vw] flex flex-col items-center justify-center"
-				>
+				<section id="intro" className="w-full min-h-screen text-center flex flex-col items-center justify-center">
 					<div className="container flex flex-col">
 						<div className="relative flex flex-col items-center justify-center">
-							<div className="dash-vertical py-[150px]">
+							<div className="dash-vertical py-[120px]">
 								<h1 className="py-4 xl:py-8 text-4xl sm:text-5xl lg:text-8xl font-black safu-title-grad-text ups">
 									IDEAS TO IDOs
 								</h1>
 								<div className="px-8">
 									<p className="text-sm lg:text-2xl lg:leading-9 text-zinc-400 font-light ups mb-8">
-										SAFU Launcher is a decentralised, fully on-chain platform for projects to launch
-										<br /> ideas and for investors to tap into opportunities
+										Build, launch and earn on the most secure and completely
+										<br /> decentralised crypto launchpad
 									</p>
 									<div className=" w-full flex justify-center ups">
 										<div className="flex flex-col mr-4">
@@ -51,7 +48,7 @@ export default function Intro() {
 									</div>
 								</div>
 							</div>
-							<div className="absolute dash-horizontal px-[763px] py-[64px] bottom-[304px]"></div>
+							<div className="absolute dash-horizontal px-[763px] py-[64px] bottom-[260px]"></div>
 						</div>
 					</div>
 					<div className="flex justify-center"></div>
