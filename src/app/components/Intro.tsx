@@ -28,7 +28,7 @@ export default function Intro() {
 				<section id="intro" className="w-full min-h-screen text-center flex flex-col items-center justify-center">
 					<div className="container flex flex-col">
 						<div className="relative flex flex-col items-center justify-center">
-							<div className="dash-vertical py-[120px]">
+							<div className="md:dash-vertical py-[120px]">
 								<h1 className="py-4 xl:py-8 text-4xl sm:text-5xl lg:text-8xl font-black safu-title-grad-text ups">
 									IDEAS TO IDOs
 								</h1>
@@ -48,7 +48,7 @@ export default function Intro() {
 									</div>
 								</div>
 							</div>
-							<div className="absolute dash-horizontal px-[763px] py-[64px] bottom-[260px]"></div>
+							<div className="max-md:hidden absolute dash-horizontal px-[300px] lg:px-[504px] 2xl:px-[763px] py-[64px] bottom-[170px] lg:bottom-[245px] xl:bottom-[260px]"></div>
 						</div>
 					</div>
 					<div className="flex justify-center"></div>
