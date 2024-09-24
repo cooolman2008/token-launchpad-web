@@ -35,7 +35,7 @@ export default function Launch() {
 				className="flex items-center justify-center flex-col"
 			>
 				<Image
-					className="box w-1/4"
+					className="box w-72 md:w-96 2xl:w-1/4"
 					src={logo}
 					alt="SpeedyWeb Logo"
 					style={{
